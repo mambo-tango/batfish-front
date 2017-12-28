@@ -14,14 +14,15 @@ router.beforeEach(function (to, from, next){
             	// alert("to:"+to.path+" from:"+from.path + " next:"+next.path);
               // next({ path: '/login' });
               next();
+            } else if(to.path == '/dashboard'){
+                next();
             } else if(to.path == '/401'){
             	// alert("to:"+to.path+" from:"+from.path + " next:"+next.path);
                 next();
-            }
-            else if(to.path == '/404'){
+            } else if(to.path == '/404'){
             	// alert("to:"+to.path+" from:"+from.path + " next:"+next.path);
                 next(); 
-            }else{
+            } else{
             	next({path: '/404'}); 
             }
 

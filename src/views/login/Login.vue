@@ -62,11 +62,11 @@
           // }
         };
         const validatePass2 = (rule, value, callback) => {
-          if ( md5('@lss'+value) !== md5('@root') ) {
-                callback(new Error('密码错误！'));
-          } else {
+          // if ( md5('@lss'+value) !== md5('@root') ) {
+          //       callback(new Error('密码错误！'));
+          // } else {
                 callback();
-          }
+          // }
         };
 
         return {
@@ -96,30 +96,30 @@
       },
       methods: {
         handleLogin() {
-            
-            this.$refs.loginForm.validate(valid => {
-                if (valid) {
-                  this.loading = true;
-                    var  par = JSON.parse(JSON.stringify(this.loginForm)) ;
-                         par.password = md5('@lss'+par.password);
+            this.$router.push({ path: '/dashboard' });
+            // this.$refs.loginForm.validate(valid => {
+            //     if (valid) {
+            //       this.loading = true;
+            //         var  par = JSON.parse(JSON.stringify(this.loginForm)) ;
+            //              par.password = md5('@lss'+par.password);
 
-                    this.$store.dispatch('LoginByEmail', par).then(() => {
-                    this.loading = false;
+            //         this.$store.dispatch('LoginByEmail', par).then(() => {
+            //         this.loading = false;
                    
-                    console.log('登陆成功即将跳转--------')
-                    this.$router.push({ path: '/' });
+            //         console.log('登陆成功即将跳转--------')
+            //         this.$router.push({ path: '/dashboard' });
                    
                         
-                    // this.showDialog = true;
-                  }).catch(err => {
-                    this.$message.error(err);
-                    this.loading = false;
-                  });
-                } else {
-                  console.log('error submit!!');
-                  return false;
-                }
-            });
+            //         // this.showDialog = true;
+            //       }).catch(err => {
+            //         this.$message.error(err);
+            //         this.loading = false;
+            //       });
+            //     } else {
+            //       console.log('error submit!!');
+            //       return false;
+            //     }
+            // });
         },
         afterQRScan() {
           // const hash = window.location.hash.slice(1);
