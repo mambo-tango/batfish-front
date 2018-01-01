@@ -1,5 +1,5 @@
 {
-  "name": "vue-admin-spa",
+  "name": "batfish-front",
   "version": "1.0.0",
   "description": "a vue management system based on ：vue + vue-resource + vue-router + vuex + element-ui + ES6 + webpack + npm",
   "keywords": [
@@ -15,11 +15,11 @@
     "webpack",
     "npm"
   ],
-  "homepage": "https://lss5270.github.io/vue-admin-spa-demo/",
-  "author": "lss <81438234@qq.com> (https://github.com/lss5270/vue-element-admin)",
+  "homepage": "https://github.com/mambo-tango/batfish-front",
+  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lss5270/vue-admin-spa/issues"
+    "url": "https://github.com/mambo-tango/batfish-front/issues"
   },
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lss5270/vue-element-admin"
+    "url": "https://github.com/mambo-tango/batfish-front"
   },
   "dependencies": {
     "blueimp-md5": "^2.7.0",

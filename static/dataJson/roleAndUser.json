@@ -28,8 +28,8 @@
            "userbaseinfoList": [
              {
                "id": "1",
-               "userCode": "lss",
-               "userName": "楚乔",
+               "userCode": "batfish",
+               "userName": "batfish",
                "gender": 4173,
                "birthday": null,
                "pinyinCode": null,
@@ -56,7 +56,7 @@
                "regType": null,
                "headPhoto": null,
                "resume": null,
-               "email": "81438234@qq.com"
+               "email": "123456789@qq.com"
              }
              
            ]

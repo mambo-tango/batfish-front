@@ -18,7 +18,7 @@
           {
             "id": "10000",
             "menuName": "首页",
-            "url": "/index/personalInfo",
+            "url": "/index/dashboard",
             "icon": "fa-calendar",
             "remark": null,
             "seqno": 10,
@@ -39,7 +39,7 @@
           },
           {
             "id": "10002",
-            "menuName": "热映电影",
+            "menuName": "豆瓣电影",
             "url": "/movie/newMovie",
             "icon": "fa-clock-o",
             "remark": null,

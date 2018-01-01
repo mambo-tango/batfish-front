@@ -11,8 +11,8 @@
                 </el-menu-item>
             </router-link> -->
 
-            <router-link  to="/index/personalInfo"  v-if="routes['/index/personalInfo']" >
-                <el-menu-item index="/index/personalInfo">
+            <router-link  to="/index/dashboard"  v-if="routes['/index/dashboard']" >
+                <el-menu-item index="/index/dashboard">
                     <i class="fa fa-home" aria-hidden="true"></i> 首页
             
                 </el-menu-item>

@@ -22,7 +22,7 @@ const Err404 = _import('error/404');
 const Err401 = _import('error/401');
 
 
-const PersonalInfo = _import('index/personalInfo');
+const Dashboard = _import('index/dashboard');
 const Readme = _import('index/readme');
 /* example*/
 const TableList = _import('example/tableList');
@@ -73,7 +73,7 @@ const constantRouterMap = [
     noDropdown: true,
     children: [
         { path: 'readme', component: Readme, name: '仪表盘' },
-        { path: 'personalInfo', component: PersonalInfo, name: '个人信息' }
+        { path: 'dashboard', component: Dashboard, name: 'dashboard' }
     ]
   },
   

@@ -11,11 +11,12 @@
             <el-dropdown class="avatar-container" trigger="click">
                 <div class="avatar-wrapper">
                     <span class="user-name">{{userInfo.nickname}}</span>
-                    <img class="user-avatar" :src="userInfo.avatar+'?imageView2/1/w/80/h/80'">
+                    <!-- <img class="user-avatar" :src="userInfo.avatar+'?imageView2/1/w/80/h/80'"> -->
+                    <img class="user-avatar" :src="userInfo.avatar">
                     <i class="el-icon-caret-bottom"></i>
                 </div>
                 <el-dropdown-menu class="user-dropdown" slot="dropdown">
-                    <router-link class='inlineBlock' to="/index/personalInfo">
+                    <router-link class='inlineBlock' to="/index/dashboard">
                         <el-dropdown-item>
                             首页
                         </el-dropdown-item>
