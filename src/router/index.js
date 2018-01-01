@@ -16,7 +16,6 @@ const reset = _import('login/reset');
 
 /* components */
 // const Tinymce = _import('components/tinymce');
-// const Mixin = _import('components/mixin');
 
 /* error page */
 const Err404 = _import('error/404');
@@ -35,14 +34,9 @@ const MovieSearch = _import('movie/movieSearch');
 
 const Form = _import('example/form');
 const Tinymce = _import('example/tinymce');
-const Mixin = _import('example/mixin');
 
 /* 系统管理*/
 const PermissionsManage = _import('systemSet/permissionsManage');
-/* 学生管理*/
-const StudentList = _import('student/studentList');
-const StudentAdd = _import('student/studentAdd');
-const StudentUpdate = _import('student/studentUpdate');
 
 Vue.use(Router);
 
@@ -78,7 +72,7 @@ const constantRouterMap = [
     // icon: 'EXCEL',
     noDropdown: true,
     children: [
-        { path: 'readme', component: Readme, name: '系统说明' },
+        { path: 'readme', component: Readme, name: '仪表盘' },
         { path: 'personalInfo', component: PersonalInfo, name: '个人信息' }
     ]
   },
@@ -120,19 +114,7 @@ const constantRouterMap = [
       
     ]
   },
-  {
-    path: '/studentsManage',
-    component: Layout,
-    redirect: 'noredirect',
-    name: '学生管理',
-    // icon: '404',
-    children: [
-      { path: 'studentList', component: StudentList, name: '学生列表' },
-      { path: 'studentAdd', component: StudentAdd, name: '学生添加' },
-      { path: 'studentUpdate', component: StudentUpdate, name: '学生修改' },
-      
-    ]
-  },
+
   
   {
     path: '/example',
@@ -145,7 +127,6 @@ const constantRouterMap = [
       { path: 'form', component: Form, name: 'form表单编辑' },
 
       { path: 'tinymce', component: Tinymce, name: '富文本编辑器' },
-      { path: 'mixin', component: Mixin, name: '小组件' },
       { path: '31', component: Form, name: '三级菜单1' },
     ]
   },

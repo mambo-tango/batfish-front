@@ -4,13 +4,7 @@
             <el-col :span="8">
                 
                 <div class="user_img" >
-                    <!-- <img :src="personalInfo.avatar" alt="用户头像" >
-                    <p>
-                        <button type="button" class="el-button filter-item el-button--primary" @click="uploadAvatar()">
-                            <i class="fa fa-cloud-upload" aria-hidden="true"></i><span>上传头像</span>
-                        </button>
-                    </p> -->
-
+                  
                     <img v-if="newImageUrl" :src="newImageUrl" alt="用户头像" >
                     <img v-else :src="personalInfo.avatar" alt="用户头像" >
 

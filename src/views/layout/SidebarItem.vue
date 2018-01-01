@@ -60,7 +60,7 @@
             </el-submenu>
             
             <!-- 三级菜单 示例-->
-            <el-submenu index="综合实例" v-if="routes['/example/form'] || routes['/example/tinymce'] || routes['/example/mixin'] ">
+            <el-submenu index="综合实例" v-if="routes['/example/form'] || routes['/example/tinymce']">
                 <template slot="title">
                     <i class="fa fa-envelope-open-o" aria-hidden="true"></i> 综合实例
                 </template>
@@ -75,11 +75,7 @@
                             富文本编辑器
                         </el-menu-item>
                     </router-link>
-                    <router-link  class="menu-indent" to="/example/mixin"   v-if="routes['/example/mixin']">
-                        <el-menu-item index="/example/mixin">
-                            小组件
-                        </el-menu-item>
-                    </router-link>
+
                     
                     <!-- 三级菜单 -->
                     <el-submenu index="table内编辑" >
@@ -119,29 +115,6 @@
                             登录日志
                         </el-menu-item>
                     </router-link>
-               
-            </el-submenu>
-
-            <el-submenu index="学生信息管理" > 
-                <template slot="title">
-                    <i class="fa fa-cogs fa-fw" aria-hidden="true"></i> 学生信息管理
-                </template>
-                    <router-link  class="menu-indent" to="/studentsManage/studentList" >
-                        <el-menu-item index="/studentsManage/studentList">
-                            学生信息列表
-                        </el-menu-item>
-                    </router-link>
-                    <router-link  class="menu-indent" to="/studentsManage/studentAdd" >
-                        <el-menu-item index="/studentsManage/studentAdd">
-                            学生信息添加
-                        </el-menu-item>
-                    </router-link>
-                    <!-- <router-link  class="menu-indent" to="/studentsManage/studentUpdate" >
-                        <el-menu-item index="/studentsManage/studentUpdate">
-                            学生信息修改
-                        </el-menu-item>
-                    </router-link> -->
-                    
                
             </el-submenu>
 
